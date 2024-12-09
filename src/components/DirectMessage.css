@@ -1,0 +1,21 @@
+.direct-message {
+  display: flex;
+  height: 100vh;
+  background-color: #f3f4f6;
+}
+
+.sidebar {
+  width: 300px; 
+  background-color: #2c2f33; 
+  border-right: 1px solid #23272a; 
+  overflow-y: auto;
+}
+
+.main {
+  flex-grow: 1; 
+  background-color: #ffffff; 
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  overflow-y: auto; 
+}

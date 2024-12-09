@@ -1,0 +1,115 @@
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #f4f7fc;
+}
+
+.chat-header {
+    background-color: #40444b;
+    color: #ffffff;
+    padding: 12px;
+    text-align: center;
+    font-size: 0.5rem;
+    font-weight: 600;
+    border-bottom: 1px solid #23272a;
+}
+
+.chat-messages {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: #fff;
+}
+
+.chat-message {
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.chat-sender {
+    background-color: #190441;
+    border-left: 4px solid #ffffff;
+    margin-left: 20%;
+    text-align: right;
+}
+
+.chat-receiver {
+    background-color: #40444b;
+    color: #ffffff;
+    border-right: 4px solid #b1eaf1;
+    margin-right: 20%; 
+    text-align: left;
+}
+
+.message-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: whitesmoke;
+    margin-bottom: 5px;
+}
+
+.message-sender {
+    font-weight: bold;
+}
+
+.message-time {
+    font-style: italic;
+}
+
+.message-body {
+    font-size: 1rem;
+    color: wheat;
+    margin-top: 5px;
+}
+
+.chat-input-container {
+    display: flex;
+    padding: 10px;
+    background-color: #ffffff;
+    border-top: 1px solid #ddd;
+}
+
+.chat-input {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+.chat-send-button {
+    background-color: green;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.chat-send-button:hover {
+    background-color: #0056b3;
+}
+
+.chat-send-button.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.chat-send-button:disabled {
+    opacity: 0.5;
+}
+
+.no-chat-selected {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+}

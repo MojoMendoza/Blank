@@ -1,0 +1,44 @@
+.channel-list-sidebar {
+    background-color: #f9f9f9;
+    border-right: 1px solid #ddd;
+    padding: 10px;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.channel-list-sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.channel-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.channel-item {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.channel-item:hover {
+    background-color: #eaeaea;
+}
+
+.channel-name {
+    font-size: 16px;
+    margin: 0;
+}
+
+.loading,
+.error,
+.no-channels {
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+}
