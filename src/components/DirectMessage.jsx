@@ -4,20 +4,21 @@ import Conversation from "./Conversation";
 import "./DirectMessage.css";
 
 const DirectMessage = () => {
+    const [selectedUser, setSelectedUser] = useState(null);
 
-    const [selectedUser, setSelectedUser] = useState('');
-    const handleUserSelect = (user) => {
-        setSelectedUser(user)
+    // Handle user selection
+    const handleUserSelect = (userId) => {
+        setSelectedUser(userId);  // Update with selected userId
     };
 
     return (
         <div className="direct-message">
             <div className="sidebar">
-                <UserList onUserSelect={handleUserSelect} />
+                <UserList onUserSelect={handleUserSelect} />  {/* Pass the function to UserList */}
             </div>
 
             <div className="main">
-                <Conversation selectedUser={selectedUser} />
+                <Conversation selectedUser={selectedUser} />  {/* Pass selectedUser to Conversation */}
             </div>
         </div>
     );

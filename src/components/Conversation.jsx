@@ -14,7 +14,6 @@ function Conversation({ selectedUser }) {
         const startPolling = () => {
             interval = setInterval(() => {
                 if (selectedUser) {
-                    console.log('refreshed');
                     fetchMessages(selectedUser.id, true);
                 }
             }, pollingInterval);
